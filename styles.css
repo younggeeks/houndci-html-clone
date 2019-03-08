@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Tofino';
+    src: url('./css/fonts/TofinoPersonal-Bold.otf');
+    src:
+            url('./css/fonts/TofinoPersonal-Bold.otf')
+            format('opentype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Tofino';
+    src: url('./css/fonts/TofinoPersonal-Medium.otf');
+    src:
+            url('./css/fonts/TofinoPersonal-Medium.otf')
+            format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Tofino';
+    src: url('./css/fonts/TofinoPersonal-Regular.otf');
+    src:
+            url('./css/fonts/TofinoPersonal-Regular.otf')
+            format('opentype');
+    font-weight: 400;
+}
+
+
+.row{
+    max-width: 1300px;
+}
+
+*{
+    margin:0;
+    font-family: 'Tofino', sans-serif;
+    font-weight: 400;
+}
+html{
+    font-size: 20px;
+}
+
+header{
+    width:96%;
+    margin:30px auto;
+    font-size:83%;
+    display:block;
+}
+ .logo{
+     float:left;
+     height:50px;
+     width:auto;
+ }
+ .logo:hover{
+     fill: #8f62b2;
+ }
+ .main-menu{
+     float:left;
+     list-style: none;
+     margin: 13px 0;
+     padding-left:10px;
+ }
+ .main-menu li{
+     display:inline-block;
+     margin-right: 10px;
+
+ }
+ .main-menu li a:link,.main-menu li a:visited{
+     text-decoration: none;
+     color:#716d76;
+ }
+ .main-menu li a:hover,.main-menu li a:active{
+     color: #996cbc;
+     transition: color 0.20s;
+ }
+.git-nav-link{
+    float:right;
+    border: 1px solid #716d76;
+    padding:15px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color:#716d76;
+}
+.git-nav-link:hover, .git-nav-link:active{
+    color: #996cbc;
+    border:1px solid #996cbc;
+    background-color: #fbf8fd;
+    transition: color 0.20s, border 0.20s, background-color 0.20s;
+
+}
+
+.git-nav-link i:hover{
+    color: #996cbc;
+}
+.clearfix:after{
+    content: '';
+    display:block;
+    clear:both;
+}
+
+.hero-text{
+    display:flex;
+    justify-content: center;
+    margin: 80px auto;
+    flex-direction: column;
+}
+
+.hero-text h1{
+    font-size:290%;
+    font-weight: normal;
+    text-align: center;
+    display:block;
+    color:#646464;
+}
+.hero-text a{
+    width:230px;
+    align-self: center;
+    padding:20px;
+    margin:70px 0;
+    text-align: center;
+    border:1px solid #a873d1;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #a873d1;
+    color:white;
+
+}
+.hero-text a:hover,.hero-text a:active{
+    background-color:#8f62b2;
+    transition: background-color 0.20s;
+}
+
+.companies{
+    display:flex;
+    justify-content: center;
+
+}
+
+.companies span{
+    display:block;
+    margin:auto;
+}
+.companies
+/* Hover color #8f62b2*/
