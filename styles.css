@@ -12,7 +12,7 @@
     src:
             url('./css/fonts/TofinoPersonal-Medium.otf')
             format('opentype');
-    font-weight: normal;
+    font-weight: 400;
 }
 @font-face {
     font-family: 'Tofino';
@@ -20,7 +20,33 @@
     src:
             url('./css/fonts/TofinoPersonal-Regular.otf')
             format('opentype');
-    font-weight: 400;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Tofino';
+    src: url('./css/fonts/TofinoPersonal-Light.otf');
+    src:
+            url('./css/fonts/TofinoPersonal-Light.otf')
+            format('opentype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Tofino';
+    src: url('./css/fonts/TofinoPersonal-Book.otf');
+    src:
+            url('./css/fonts/TofinoPersonal-Book.otf')
+            format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Tofino';
+    src: url('./css/fonts/TofinoPersonal-Thin.otf');
+    src:
+            url('./css/fonts/TofinoPersonal-Thin.otf')
+            format('opentype');
+    font-weight: 100;
 }
 
 
@@ -31,16 +57,20 @@
 *{
     margin:0;
     font-family: 'Tofino', sans-serif;
-    font-weight: 400;
+
 }
 html{
     font-size: 20px;
+    font-weight: 400;
 }
+
+
 
 header{
     width:96%;
     margin:30px auto;
     font-size:83%;
+    font-weight: 400;
     display:block;
 }
  .logo{
@@ -102,24 +132,27 @@ header{
     flex-direction: column;
 }
 
-.hero-text h1{
+ h1{
     font-size:290%;
-    font-weight: normal;
+    font-weight: 300;
     text-align: center;
     display:block;
     color:#646464;
 }
-.hero-text a{
-    width:230px;
+.git-filled{
     align-self: center;
-    padding:20px;
-    margin:70px 0;
     text-align: center;
     border:1px solid #a873d1;
     text-decoration: none;
     border-radius: 30px;
     background-color: #a873d1;
     color:white;
+}
+.git-filled-hero{
+    padding:20px;
+    margin:70px 0;
+    width:230px;
+
 
 }
 .hero-text a:hover,.hero-text a:active{
@@ -130,12 +163,227 @@ header{
 .companies{
     display:flex;
     justify-content: center;
-
+    flex-direction: column;
 }
 
 .companies span{
-    display:block;
-    margin:auto;
+    overflow: hidden;
+    text-align: center;
+    color: #646464;
+    font-weight: 300;
+
 }
-.companies
+
+/*MIDDLE LINES --- SAMAKI ----*/
+.enjoyed-by:before, .enjoyed-by:after{
+    background-color: #d1d1d1;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 14%;
+    font-size:90%;
+    font-weight: 100;
+}
+.enjoyed-by:before {
+    right: 0.5em;
+}
+.enjoyed-by:after {
+    left: 0.5em;
+}
+.logos{
+    display:flex;
+    justify-content: center;
+    margin-top:50px;
+    align-self: center;
+}
+
+.logos li {
+    list-style: none;
+}
+.logos li img{
+    width:100px;
+    margin:30px;
+}
+
+.how-it-works{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.how-it-works h1{
+    margin-bottom: 30px;
+    font-size:16px;
+    font-weight: 400;
+}
+
+
+.how-it-works p{
+    width:55%;
+    align-self: center;
+    margin-bottom: 85px;
+    color: #646464;
+    font-weight: 300;
+}
+
+.how-it-works figure img{
+    width:55%;
+}
 /* Hover color #8f62b2*/
+
+.pricing{
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+section h1{
+    font-size:200%;
+    margin-top: 100px;
+    font-weight: 400;
+}
+
+
+.pricing span{
+    align-self: center;
+    margin: 50px 0 30px 0;
+    color:#a873d1;
+}
+.pricing{
+    width:70%;
+    margin:0 auto;
+
+}
+.price-box{
+    width:270px;
+    border-radius:5px;
+    margin:0 10px;
+    box-sizing: content-box;
+    display:flex;
+}
+.price-box:before{
+    content: '';
+    align-self: self-start;
+    height: 100%;
+    display:block;
+    width:25px;
+    margin:0;
+}
+.pricing-container{
+    position:relative;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+
+.price-box ul{
+    list-style: none;
+    font-size:110%;
+    padding:13px 20px;
+}
+.price-box li {
+    color: #646464;
+    margin:20px 25px 20px 15px;
+}
+
+.price-box strong{
+}
+
+
+.price-box li:nth-child(2) p{
+    font-weight: 300;
+    margin-bottom:30px;
+}
+.price-box span{
+    font-size:180%;
+    font-weight: 300;
+}
+.price-box li:last-child p {
+    color:#a873d1;
+    font-weight: 300;
+}
+.private-repo{
+    border:2px solid #a873d1;
+    height: 200px;
+}
+
+.private-repo:before{
+    background-image: url(img/pattern.svg);
+
+}
+.open-repos{
+    align-self: center;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:70px;
+    height:350px !important;
+}
+ .open-source:before{
+    background-image: url(img/pattern_gray.svg) !important;
+}
+ .open-source{
+     border:2px solid gainsboro;
+ }
+
+.open-source li:last-child p {
+    color:#646464;
+    font-weight: 300;
+}
+
+.open-repos span{
+    color:#646464;
+
+}
+
+.get-started-git{
+    align-self: center;
+    display:flex;
+    /*width:500px;*/
+}
+
+.git-filled-footer{
+    padding:20px;
+    margin:70px 0;
+    width:270px;
+}
+.footer{
+    align-self: center;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:100px;
+    margin-bottom:50px;
+    font-weight: 300 !important;
+    font-size:83%;
+    color:#646464;
+}
+.footer ul {
+    list-style: none;
+    align-self: center;
+}
+.footer li{
+    display:inline-block;
+}
+.footer li a:link,.footer li a:visited{
+    text-decoration: none;
+    color:  #a873d1;
+
+    margin-right:20px;
+}
+.footer p{
+    align-self: center;
+    text-decoration: none;
+    margin: 30px 0;
+}
+.footer p a {
+    text-decoration: none;
+    color:  #a873d1;
+}
