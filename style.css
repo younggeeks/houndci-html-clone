@@ -1,0 +1,130 @@
+ /*#c099de*!*/
+.row{
+    max-height: 1410px;
+}
+
+ *{
+     margin:0;
+     /*font-family: "Ruda", "SansSerif";*/
+     font-family: 'El Messiri', sans-serif;
+     color:#716d76;
+ }
+header{
+    width:90%;
+    margin:3%;
+    margin-left:5%;
+}
+header img{
+    width:200px;
+    float:left;
+}
+.main-menu{
+    list-style: none;
+    display: inline-block;
+}
+.main-menu li{
+    display:inline-block;
+    margin-right:10px;
+    font-weight: 700;
+    margin-top:17px;
+}
+.git-link{
+    float:right;
+    text-decoration: none;
+    height:20px;
+    border:1px solid #716d76;
+    padding:15px 20px 10px 20px;
+    font-weight:700;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+/*header h1{*/
+    /*position: absolute;*/
+    /*top:40%;*/
+    /*left:50%;*/
+    /*font-size: 300%;*/
+    /*transform: translate(-50%);*/
+    /*word-spacing: 2px;*/
+    /*letter-spacing: 1px;*/
+    /*text-align: center;*/
+/*}*/
+.centered-hero{
+    position: absolute;
+    top:40%;
+    left:50%;
+    width:100%;
+    transform: translate(-50%);
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.centered-hero h2{
+    font-size: 300%;
+}
+
+.centered-hero a{
+    margin:90px 0;
+    display:inline-block;
+    text-decoration: none;
+    padding:20px 30px;
+    border-radius:30px;
+    background: #aa79d0;
+
+    color:white;
+    font-size:140%;
+}
+.centered-hero a:hover{
+    background: #996cbc;
+    transition: background 0.4s;
+}
+.centered-hero a i {
+    color:white;
+}
+.enjoyed-by{
+    margin:100px 0
+}
+
+.logos{
+    width:100%;
+
+}
+.logos img{
+    height:90px;
+    width:auto;
+}
+.row div{
+    margin:10px;
+    width:25%;
+}
+
+/*-----------------------------------*/
+        /* Line on side  */
+ /*----------------------------------*/
+.enjoyed-by{
+    display:flex;
+    width:50%;
+    margin-left:25%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:120%;
+}
+.enjoyed-by:before,.enjoyed-by:after{
+    content:'';
+    border-top: 1px solid #a9a5ae;
+    opacity:0.5;
+    margin:0 20px 0 0;
+    flex: 1 0 10px;
+}
+
+.enjoyed-by:after{
+    margin:0 0 0 20px;
+}
+
+.logos{
+    display:flex;
+    justify-content: center;
+}
